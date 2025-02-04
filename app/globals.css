@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Liter&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: #ededed;
+  }
+} */
+
+.volkhov {
+  font-family: 'Volkhov';
+}
+body {
+
+  font-family: "Inter", Helvetica, sans-serif;
+  color: #25303B;
+}
+
+.fs {
+  font-family: 'Flight Sans';
+}
+
+.luxary {
+  font-family: "Luxary";
+}
+
+h1 {
+  font-family: 'Flight Sans';
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-greenev{
+  background-image: url("/contact-pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(80%);
+}
+
+.bg-482 {
+  background-image: url("/peter-nguyen-CQhgno3yhv8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@font-face {
+  font-family: 'Flight Sans';
+  src: url('/fonts/FlightSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Flight Sans';
+  src: url('/fonts/FlightSans-Bold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Flight Sans';
+  src: url('/fonts/FlightSans-Title.woff2') format('woff2');
+  font-weight: 600;
+  font-style: black;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Luxary';
+  src: url('/fonts/baithe.otf') format('otf');
+  font-style: normal;
+  font-display: swap;
+}

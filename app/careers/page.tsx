@@ -11,7 +11,7 @@ const CareersPage = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="w-[95%] md:w-[60%] space-y-5 mt-52"
       >
-        <h1 className="text-4xl md:text-7xl font-medium text-gray-900">
+        <h1 className="text-4xl md:text-7xl font-medium text-gray-900 volkhov">
           The challenge of your <span className="text-indigo-600">lifetime</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600">
@@ -38,7 +38,7 @@ const CareersPage = () => {
         Experience 
         isn’t everything
         </p>
-        <p className="text-sm md:text-md fs">
+        <p className="text-md md:text-md fs">
         Traditional hiring practices often demand experience before offering opportunities—but how can anyone gain experience without a starting point? Here, we challenge that norm. We believe talent is unlocked through learning, not just credentials. That&apos;s why we provide an environment where passion, curiosity, and dedication lead to exceptional career growth, even for those just starting out. With the right support and mentorship, potential turns into expertise faster than ever.
         </p>
         </motion.div>

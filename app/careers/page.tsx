@@ -9,7 +9,7 @@ const CareersPage = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="w-[95%] md:w-[60%] space-y-5"
+        className="w-[95%] md:w-[60%] space-y-5 mt-52"
       >
         <h1 className="text-4xl md:text-7xl font-medium text-gray-900">
           The challenge of your <span className="text-indigo-600">lifetime</span>

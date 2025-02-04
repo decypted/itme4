@@ -12,7 +12,7 @@ const CareersPage = () => {
         className="w-[95%] md:w-[60%] space-y-5 mt-52"
       >
         <h1 className="text-4xl md:text-7xl font-medium text-gray-900 volkhov">
-          The challenge of your <span className="text-indigo-600">lifetime</span>
+          Solving the worlds toughest problem is in our<span className="text-indigo-600 italic"> dna.</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Different countries, different journeys—Interners all share one common goal:  
@@ -37,13 +37,12 @@ const CareersPage = () => {
         <p className="text-5xl md:text-6xl bg-gradient-to-tl from-slate-800 via-violet-500 to-zinc-400 bg-clip-text text-transparent py-4">
           Experience isn’t everything
         </p>
-        <p className="text-md md:text-md fs">
-          Traditional hiring practices often demand experience before offering opportunities—but how can anyone gain experience without a starting point? Here, we challenge that norm. We believe talent is unlocked through learning, not just credentials. That&apos;s why we provide an environment where passion, curiosity, and dedication lead to exceptional career growth, even for those just starting out. With the right support and mentorship, potential turns into expertise faster than ever.
+        <p className="text-md md:text-md fs w-[90%] text-center mx-auto">
+          Traditional hiring practices often demand experience before offering opportunities—but how can anyone gain experience without a starting point?
         </p>
       </motion.div>
 
-{/* Bento Box Section */}
-{/* Bento Box Section */}
+{/* This is the bento Box Section */}
 <motion.div
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}

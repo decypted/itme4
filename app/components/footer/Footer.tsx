@@ -69,7 +69,7 @@ const Footer = () => {
           {/* Logo & Copyright Section - No Links */}
           <div className="flex flex-col sm:items-start sm:text-left">
             <Image src="/InternMe-Black.svg" width={120} height={120} alt="Logo" />
-            <span className="mt-4 text-sm text-gray-600">© 2024 InternMe. All rights reserved.</span>
+            <span className="mt-4 text-sm text-gray-600 fs">© 2025 InternMe. All rights reserved.</span>
             
           </div>
 

@@ -53,7 +53,7 @@ const footerData = [
     title: 'Legal',
     links: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Terms of Use', href: '/terms-of-use' },
+      { name: 'Terms of Use', href: '/legal/terms-of-use' },
     ]
   },
 ];

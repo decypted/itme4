@@ -1,7 +1,7 @@
 const Pricing = {
-    subscriptionTitle: ["Kynite", "Kynite", "Family"],
+    subscriptionTitle: ["Essential", "Professional", "Enterprise"],
     subscriptionPrice: {
-        monthly: ["$0/mo", "$8.99/mo", "$11.99/mo"],
+        monthly: ["$11.99/mo", "$29.99/mo", "$199.99/mo"],
         yearly: ["$0/yr", "$5.42/mo", "$9.99/mo"], // Example prices
         lifetime: ["$0/lifetime", "$129.99/lifetime", "$249.99/lifetime"], // Example prices
         yearlyDescription: ["$64.99 billed annually", "$119.99 billed annually"],

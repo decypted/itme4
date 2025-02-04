@@ -1,8 +1,7 @@
 "use client"
 
 import React from 'react'
-import Link from 'next/link'
-import { GoArrowUpRight } from "react-icons/go";
+
 import { delay, motion } from 'framer-motion';
 
 
@@ -17,19 +16,7 @@ const LandingPage = () => {
         opacity: 1,
         y:0,
     }}
-    const fadeInAnimationVariant2 = {
-      initial: {
-          opacity: 0,
-          y:-250,
-          
-      },
-      animate: {
-          opacity: 1,
-          y:0,
-          zIndex: 30,
-      },
     
-}
   return (
     
     <div className='w-[100%] bg-gradient-to-br from-[#f5f6fa] to-[#e0e7ff] h-[100%]'>
@@ -98,7 +85,6 @@ const LandingPage = () => {
                 className='text-black text-[13px] font-medium'>
                     
                     These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (&quot;you&quot;), and InternMe Corporation, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <span className='font-bold'>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</span>
-
                 </motion.p>
                 <motion.p
                 variants={fadeInAnimationVariant} 
@@ -110,7 +96,7 @@ const LandingPage = () => {
                 transition={{ duration: 1}}
                 className='text-black text-[13px] font-medium'>
                     
-                    Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the &quot;Last updated&quot; date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
+                    Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the &quot;Last updated&quot; date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
 
 
                 </motion.p>
@@ -191,7 +177,7 @@ const LandingPage = () => {
                 transition={{ duration: 1}}
                 className='text-black text-[13px] font-medium'>
                     
-                    We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the &quot;Content&quot;), as well as the trademarks, service marks, and logos contained therein (the "Marks").
+                    We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the &quot;Content&quot;), as well as the trademarks, service marks, and logos contained therein (the &quot;Marks&quot;).
 
 
                 </motion.p>

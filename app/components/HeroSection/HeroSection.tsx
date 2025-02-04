@@ -69,7 +69,7 @@ const HeroSection = () => {
                 Try InternMe for a dedicated career service that makes your life{' '}
                 <span className='volkhov font-semibold italic text-indigo-800'>
                   more convenient
-                </span>, so you can focus on the things you love and we do the grueling work.
+                </span>, so you can focus on the things you love and less of the grueling work.
               </motion.p>
 
               <motion.div

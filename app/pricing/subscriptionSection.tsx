@@ -25,14 +25,14 @@ export default function SubscriptionSection() {
     }}
 
   return (
-    <div className='bg-black w-full'>
+    <div className=' w-full'>
       <div className='w-full mx-auto'>
         <div className='py-10'>
-          <h1 className='text-center from-[#8CFFF9] to-[#FFDCAC] bg-clip-text bg-gradient-to-tr text-transparent mx-auto font-bold text-5xl py-5'>
-             It&apos; time to get back in the driver seat.
+          <h1 className='text-center mx-auto text-5xl py-5 font-medium'>
+             Transparent, No BS pricing.
           </h1>
-          <p className='text-center from-[#8CFFF9] to-[#FFDCAC] bg-clip-text bg-gradient-to-tr text-transparent mx-auto text-lg py-5'>
-            Kynite is meticously designed to help you quit doom-scrolling on Social Media. 
+          <p className='text-center mx-auto text-lg py-5 text-black/50'>
+            Powerful career management service with upgraded workflows as you grow.
           </p>
         </div>
 

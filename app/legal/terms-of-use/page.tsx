@@ -72,7 +72,7 @@ const LandingPage = () => {
                     
                     We are InternMe Corporation (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;).
 
-                    We operate the website <a href="https://temple-esports-web.vercel.app/" className='text-indigo-600 underline'>https://internme.us/</a> (the &quot;Site&quot;), as well as any other related products and services that refer or link to these legal terms (the &quot;Legal Terms&quot;) (collectively, the &quot;Services&quot;).
+                    We operate the website <a href="https://temple-esports-web.vercel.app/" className='text-indigo-600 underline'>https://internme.us/</a> (the &quot;Site&quot;), as well as any other related products and services that refer or link to these legal terms under the Saturn Group, collectively known as the parent company (the &quot;Legal Terms&quot;) (collectively, the &quot;Services&quot;).
                 </motion.p>
                 <motion.p
                 variants={fadeInAnimationVariant} 

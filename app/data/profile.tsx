@@ -20,7 +20,7 @@ const Profile = {
         funFact: "我绝对不是对商业上瘾。"
     },
     company: {
-        title: "We're changing the ethos of work.",
+        title: "We're changing how people and business approach work.",
         textDescriptor:"InternMe was founded with the idea of making job searching better for everyone, employee searching better for business and opportunities for students. We spent our first years creating a powerful, intuitative and fun system that makes career searching feel less like an obstacle and more like a game."
     }
 };

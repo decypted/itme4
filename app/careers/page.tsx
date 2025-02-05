@@ -3,7 +3,19 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const CareersPage = () => {
+  const fadeInAnimationVariant = {
+    initial: {
+        opacity: 0,
+        y:50,
+        
+    },
+    animate: {
+        opacity: 1,
+        y:0,
+    }}
+    
   return (
+    
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-white to-blue-100 p-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -44,9 +56,13 @@ const CareersPage = () => {
 
 {/* This is the bento Box Section */}
 <motion.div
-  initial={{ opacity: 0, y: 50 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1, ease: "easeOut" }}
+  variants={fadeInAnimationVariant} 
+  initial="initial"
+  whileInView="animate"
+  viewport={{
+      once: true,
+  }}
+  transition={{ duration: 1}}
   className="w-full md:w-[80%] mt-20 grid grid-cols-1 md:grid-cols-2 gap-4 bg-cover bg-center p-6 md:p-10 rounded-lg"
   style={{ backgroundImage: "url('/your-background-image.jpg')" }}
 >
@@ -56,6 +72,10 @@ const CareersPage = () => {
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.2 }}
+    whileInView="animate"
+  viewport={{
+      once: true,
+  }}
   >
     <h3 className="text-2xl font-semibold text-gray-800 text-start">Impact</h3>
     <p className="text-gray-600 mt-4 md:mt-6 text-start">
@@ -68,6 +88,10 @@ const CareersPage = () => {
     className="relative rounded-lg shadow-lg overflow-hidden bg-gradient-to-tl from-indigo-800 via-violet-700 to-slate-900 p-4 min-h-[250px] md:min-h-[300px] flex flex-col justify-end"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
+    whileInView="animate"
+  viewport={{
+      once: true,
+  }}
     transition={{ delay: 0.4 }}
   >
     <div className="absolute inset-0 flex flex-col justify-end p-4 bg-black/40">
@@ -88,6 +112,10 @@ const CareersPage = () => {
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.6 }}
+    whileInView="animate"
+  viewport={{
+      once: true,
+  }}
   >
     <h2 className="text-2xl md:text-3xl font-semibold">The right environment to get it done, and beyond.</h2>
     <p className="mt-2 text-md md:text-lg">
@@ -100,6 +128,10 @@ const CareersPage = () => {
     className="relative rounded-lg shadow-lg overflow-hidden bg-black p-4 min-h-[250px] md:min-h-[300px] flex flex-col justify-end"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
+    whileInView="animate"
+    viewport={{
+      once: true,
+  }}
     transition={{ delay: 0.8 }}
   >
     <div className="absolute inset-0 flex flex-col justify-end p-4 bg-black/40">
@@ -118,6 +150,10 @@ const CareersPage = () => {
     className="bg-white/80 p-6 md:p-8 rounded-lg shadow-lg"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
+    whileInView="animate"
+  viewport={{
+      once: true,
+  }}
     transition={{ delay: 1.0 }}
   >
     <h3 className="text-2xl font-semibold text-gray-800 text-start">Supportive Culture</h3>

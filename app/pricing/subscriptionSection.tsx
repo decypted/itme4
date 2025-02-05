@@ -5,6 +5,7 @@ import Pricing from '../data/pricing';
 import { IoMdCheckmark } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { motion } from 'framer-motion';
+import PricingTable from './pricingchart/pricingTable';
 export default function SubscriptionSection() {
  
   const [pricingOption, setPricingOption] = useState<'monthly' | 'yearly' | 'lifetime'>('monthly');
@@ -29,11 +30,12 @@ export default function SubscriptionSection() {
       <div className='w-full mx-auto'>
         <div className='py-10'>
           <h1 className='text-center mx-auto text-5xl py-5 font-medium'>
-             Transparent, No BS pricing.
+             Full transparent pricing.
           </h1>
           <p className='text-center mx-auto text-lg py-5 text-black/50'>
             Powerful career management service with upgraded workflows as you grow.
           </p>
+          <PricingTable/>
         </div>
 
         <div className='flex gap-2 justify-center py-5 rounded-full'>

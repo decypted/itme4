@@ -78,7 +78,7 @@ const CareersPage = () => {
   }}
   >
     <h3 className="text-2xl font-semibold text-gray-800 text-start">Impact</h3>
-    <p className="text-gray-600 mt-4 md:mt-6 text-start">
+    <p className="text-gray-600 mt-4 md:mt-6  text-lg text-start">
       Daring to think big is what drives us—failure is a lesson, but settling for less is never a choice.
     </p>
   </motion.div>
@@ -157,8 +157,8 @@ const CareersPage = () => {
     transition={{ delay: 1.0 }}
   >
     <h3 className="text-2xl font-semibold text-gray-800 text-start">Supportive Culture</h3>
-    <p className="text-gray-600 mt-4 md:mt-6 text-start">
-      We&apos;re invested in you—learn, grow, and thrive with a mentor who&apos;s dedicated to your success.
+    <p className="text-gray-600 mt-4 md:mt-6 text-start text-lg">
+      We&apos;re invested in you—learn, grow, and thrive with a mentor who&apos;s dedicated to your career growth.
     </p>
   </motion.div>
 </motion.div>

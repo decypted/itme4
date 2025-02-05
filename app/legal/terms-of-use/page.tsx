@@ -42,9 +42,9 @@ const LandingPage = () => {
                     once: true,
                 }}
                 transition={{ duration: 1}}
-                className='text-black lg:text-center text-md font-medium'>
+                className='text-black lg:text-center text-md font-medium italic'>
                     
-                    Last updated Feburary 4, 2025
+                    Last modified: Feburary 4, 2025
                 </motion.p>
             </div>
             {/*  TERM SECTION BELOW */}

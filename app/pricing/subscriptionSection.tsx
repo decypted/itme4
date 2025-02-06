@@ -26,14 +26,14 @@ export default function SubscriptionSection() {
     }}
 
   return (
-    <div className=' w-full'>
+    <div className=' w-full '>
       <div className='w-full mx-auto'>
         <div className='py-10'>
           <h1 className='text-center mx-auto text-5xl py-5 font-medium'>
              Full transparent pricing.
           </h1>
           <p className='text-center mx-auto text-lg py-5 text-black/50'>
-            Powerful career management service with upgraded workflows as you grow.
+          Maximize your job search potential and simplify the process with the tools that help you lock it down.
           </p>
           <PricingTable/>
         </div>

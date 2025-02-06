@@ -7,7 +7,7 @@ import Office from './SectionDivider/WhatInternMeDo';
 import NoteFromFounder from './SectionDivider/NoteFromFounder';
 import Blog from './SectionDivider/Blog';
 import EmailInput from '../EmailInput';
-
+import Image from 'next/image';
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -50,6 +50,7 @@ const HeroSection = () => {
         <div className="w-full h-full grid mt-20 items-center">
           <div className="h-[90%] mt-20 md:mt-0 space-y-10 mx-auto rounded-2xl grid items-center">
             <div className="w-[90%] md:w-[70%] mx-auto space-y-10 text-center text-[#25303b]">
+              <Image src="/itme.svg" width={300} height={300} alt='InternMe' className='mx-auto py-10'></Image>
               <motion.h1
                 variants={fadeInAnimationVariant}
                 initial="initial"

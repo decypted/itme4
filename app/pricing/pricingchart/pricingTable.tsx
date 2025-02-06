@@ -57,11 +57,11 @@ const essentialsPlan = {
 
 const PricingTable = () => {
   return (
-    <div className="w-[80%] h-full py-5 mx-auto rounded-3xl bg-[#eeedf3]">
+    <div className="w-[90%] md:w-[80%] h-full py-5 mx-auto rounded-3xl bg-[#eeedf3]">
       <div className="grid md:flex justify-center w-[90%] mx-auto">
         
         {/* Essentials Plan */}
-        <div className="w-[40%] px-10 py-5">
+        <div className="w-[100%] md:w-[40%] px-10 py-5">
           <span className="text-lg font-semibold">{essentialsPlan.name}</span>
           <p className="mt-[2em] rounded-full flex text-xl">
             {essentialsPlan.price} <span className="px-2">/</span><span>{essentialsPlan.month}</span>
@@ -89,7 +89,7 @@ const PricingTable = () => {
                 <p className="text-gray-600 text-[16px]">{plan.description}</p>
               </div>
               <div className="border-b-[1px] py-5 w-[90%] ">
-                <button className="py-4 bg-gray-200 w-[60%] rounded-2xl hover:scale-95 hover:bg-indigo-500 hover:text-white transition-all">{plan.cta}</button>
+                <button className="py-4 bg-gray-200 w-[100%] md:w-[60%] rounded-2xl hover:scale-95 hover:bg-indigo-500 hover:text-white transition-all">{plan.cta}</button>
               </div>
              
               <div className="mt-10">

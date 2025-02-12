@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Introducing from './SectionDivider/Introducing';
 import Office from './SectionDivider/WhatInternMeDo';
-import NoteFromFounder from './SectionDivider/NoteFromFounder';
+import NoteFromFounder from './SectionDivider/WhatSetsUsApart';
 import Blog from './SectionDivider/Blog';
 import EmailInput from '../EmailInput';
 import Image from 'next/image';
@@ -38,7 +38,7 @@ const staggerAnimationVariant = {
 const HeroSection = () => {
   return (
     <motion.div
-      className="w-full mx-auto text-white grid bg-gradient-to-br from-[#f5f6fa] to-[#e0e7ff]"
+      className="w-full mx-auto text-white grid "
       
     >
       {/* Background Earth component (optional) */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
         <Earth />
       </motion.div> */}
 
-      <div className="w-full md:h-[35em] grid grid-cols-1 md:grid-cols-1 mt-10">
+      <div className="w-full md:h-[100%] grid grid-cols-1 md:grid-cols-1 mt-10 pb-40 bg-[#ebf5ff] fs font-medium">
         <div className="w-full h-full grid mt-20 items-center">
           <div className="h-[90%] mt-20 md:mt-0 space-y-10 mx-auto rounded-2xl grid items-center">
             <div className="w-[90%] md:w-[70%] mx-auto space-y-10 text-center text-[#25303b]">
@@ -85,9 +85,9 @@ const HeroSection = () => {
                 <motion.div variants={fadeInAnimationVariant} initial="initial" animate="animate">
                   <Link
                     href="/"
-                    className="py-3 w-full px-6 bg-white backdrop-blur-xl rounded-full font-medium hover:text-purple-700 transition-all text-center"
+                    className="py-4 rounded-full px-10 w-full text-black/50 bg-black/5"
                   >
-                    Are you a student?
+                    Try Demo
                   </Link>
                 </motion.div>
               </motion.div>

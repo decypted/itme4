@@ -81,15 +81,15 @@ const PricingTable = () => {
         <div className="bg-white rounded-xl px-10 py-5 text-sm grid md:flex shadow-lg">
           {pricingPlans.map((plan, index) => (
             <div key={index} className="w-[100%] px-4 py-5">
-              <div className="h-[10em]">
+              <div className="h-[14em]">
                 <span className="font-medium text-lg">{plan.name}</span>
-                <p className="mt-[2em] rounded-full flex text-xl">
+                <p className="mt-[2em] rounded-full flex text-2xl font-bold">
                   {plan.price} <span className="px-2">/</span><span>{plan.month}</span>
                 </p>
-                <p className="text-gray-600 text-[16px]">{plan.description}</p>
+                <p className="text-gray-600 text-[16px] py-5">{plan.description}</p>
               </div>
               <div className="border-b-[1px] py-5 w-[90%] ">
-                <button className="py-4 bg-gray-200 w-[100%] md:w-[60%] rounded-2xl hover:scale-95 hover:bg-indigo-500 hover:text-white transition-all">{plan.cta}</button>
+                <button className="py-4 bg-gray-200 w-[100%] md:w-[60%] rounded-full hover:scale-95 hover:bg-indigo-500 hover:text-white transition-all">{plan.cta}</button>
               </div>
              
               <div className="mt-10">
@@ -122,15 +122,18 @@ const PricingTable = () => {
                 
                 {/* Render Expertise only if it exists */}
                 <div>
-                  <p className="text-lg font-bold py-3">Tap into Expertise</p>
+                 
                 </div>
                 {plan.expertise && plan.expertise.map((expertise, eIndex) => (
-                  
+                <div>
+                   <p className="text-lg font-bold py-3">Tap into Expertise</p>
                   <p key={eIndex} className="flex items-center gap-2 text-[16px] w-[80%] py-1">
+                    
                     <Image src={expertise.icon} height={20} width={20} alt="Expertise Icon" />
                     {expertise.text} 
                   
                   </p>
+                </div>
                   
                 ))}
               </div>

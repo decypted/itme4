@@ -66,7 +66,7 @@ const EmailInput: React.FC = () => {
               transition={{ duration: 0.75, ease: 'easeInOut' }}
             />
           )}
-          Sign Up
+          Get Started
         </motion.button>
       </motion.div>
 

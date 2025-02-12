@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const products = [
   { 
@@ -34,67 +34,74 @@ const products = [
     name: 'Students',
     headline: 'Empowering students with practical experience and job placement opportunities.',
     description: "A platform designed to assist students in gaining hands-on experience through internships and co-op programs.",
-    image: '/student-image.jpg', // You can replace this with the appropriate image path.
-    imagetwo: '/student-demo.jpg', // Same here, replace with actual image path.
+    image: '/student-image.jpg',
+    imagetwo: '/student-demo.jpg',
     perks: [
       { 
         title: 'Internship and Co-op Programs', 
-        icon: '/internship-icon.svg', // Replace with actual icon path.
+        icon: '/internship-icon.svg', 
         description: 'Assisting students in developing internship and cooperative education programs to offer valuable hands-on experience with partnered businesses.' 
       },
       { 
         title: 'Virtual Mock Interviews', 
-        icon: '/mock-interview-icon.svg', // Replace with actual icon path.
+        icon: '/mock-interview-icon.svg', 
         description: 'Conduct mock interview sessions online to help students practice and improve interview skills.' 
       },
       { 
         title: 'Employer Partnerships', 
-        icon: '/employer-partnership-icon.svg', // Replace with actual icon path.
+        icon: '/employer-partnership-icon.svg', 
         description: 'We forge partnerships with local, national and international employers to increase job placement opportunities for students.' 
       }
     ]
   }
-  ,
   // Add more products with unique perks here...
-]
+];
 
 const Office = () => {
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
 
   return (
     <div className='w-[100%] bg-gradient-to-r from-[#f5f6fa] to-[#e0e7ff] text-black overflow-hidden'>
-      <div className='w-[90%] mx-auto grid md:grid-cols-3 gap-8'>
-        <div className='relative flex flex-col space-y-2 col-span-1'>
+      <div className='w-[90%] mx-auto grid md:grid-cols-1 gap-8'>
+        <div className='relative space-y-2 col-span-1'>
           <div className='relative z-10'>
             <h1 className='py-10 text-3xl'>
               InternMe is designed for prospect job seekers, employers, and students.
             </h1>
           </div>
-          {products.map((product) => (
-            <motion.button
-              key={product.id}
-              onClick={() => setSelectedProduct(product)}
-              initial={{ backgroundColor: 'transparent' }}
-              animate={{
-                backgroundColor: selectedProduct.id === product.id ? 'white' : 'transparent',
-                scaleX: selectedProduct.id === product.id ? 1.05 : 1
-              }}
-              whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}
-              transition={{ duration: 0.3 }}
-              className={`h-[3em] rounded-full flex items-center justify-between space-x-2 w-full text-black shadow-md px-4 relative z-10 `}
-            >
-              <div className='flex items-center space-x-2'>
-                <div className=''>
-                  <Image src={product.image} width={30} height={30} objectFit="contain" alt={product.name} className='logo' />
+          <div className='flex md:flex md:space-x-10 gap-5'>
+            {products.map((product) => (
+              <motion.button
+                key={product.id}
+                onClick={() => setSelectedProduct(product)}
+                initial={{ backgroundColor: 'transparent' }}
+                animate={{
+                  backgroundColor: selectedProduct.id === product.id ? '#ebf5ff' : 'transparent',
+                  color: selectedProduct.id === product.id ? '#6eb5fc' : 'black',
+                  scaleX: selectedProduct.id === product.id ? 1.05 : 1
+                }}
+                whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}
+                transition={{ duration: 0.3 }}
+                className={`h-[4em] rounded-full flex items-center justify-between space-x-2 w-full md:w-[33%] text-black shadow-md px-4 relative z-10 
+                 `}
+              >
+                <div className='flex items-center space-x-2'>
+                  <div>
+                    <Image
+                      src={product.image}
+                      width={30}
+                      height={30}
+                      objectFit="contain"
+                      alt={product.name}
+                      className='logo'
+                    />
+                  </div>
+                  <span>{product.name}</span>
                 </div>
-                <span>{product.name}</span>
-              </div>
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </motion.button>
-          ))}
+               
+              </motion.button>
+            ))}
+          </div>
         </div>
 
         <motion.div
@@ -132,7 +139,7 @@ const Office = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Office;

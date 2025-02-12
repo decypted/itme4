@@ -133,20 +133,18 @@ const PricingTable = () => {
 
               {/* Render Benefits */}
               <div>
-                {plan.benefits.map((benefit, bIndex) => (
-                  <p
-                    key={bIndex}
-                    className="flex items-center gap-2 text-[16px] w-[80%] py-1"
-                  >
-                    <Image
-                      src={benefit.icon}
-                      height={20}
-                      width={20}
-                      alt="Benefit Icon"
-                    />
-                    {benefit.text}
-                  </p>
-                ))}
+              {plan.benefits.map((benefit, bIndex) => (
+  <p key={`benefit-${index}-${bIndex}`} className="flex items-center gap-2 text-[16px] w-[80%] py-1">
+    <Image
+      src={benefit.icon}
+      height={20}
+      width={20}
+      alt="Benefit Icon"
+    />
+    {benefit.text}
+  </p>
+))}
+
               </div>
 
               {/* Render Career Growth */}
@@ -155,39 +153,36 @@ const PricingTable = () => {
                   Convenience
                 </p>
                 {plan.careergrowth.map((growth, gIndex) => (
-                  <p
-                    key={gIndex}
-                    className="flex items-center gap-2 text-[16px] w-[80%] py-1"
-                  >
-                    <Image
-                      src={growth.icon}
-                      height={20}
-                      width={20}
-                      alt="Career Growth Icon"
-                    />
-                    {growth.text}
-                  </p>
-                ))}
+  <p key={`careergrowth-${index}-${gIndex}`} className="flex items-center gap-2 text-[16px] w-[80%] py-1">
+    <Image
+      src={growth.icon}
+      height={20}
+      width={20}
+      alt="Career Growth Icon"
+    />
+    {growth.text}
+  </p>
+))}
+
 
                 {/* Render Expertise only if it exists */}
                 <div></div>
                 {plan.expertise &&
-                  plan.expertise.map((expertise, eIndex) => (
-                    <div key={eIndex}>
-                      <p className="text-lg font-bold py-3">
-                        Tap into Expertise
-                      </p>
-                      <p className="flex items-center gap-2 text-[16px] w-[80%] py-1">
-                        <Image
-                          src={expertise.icon}
-                          height={20}
-                          width={20}
-                          alt="Expertise Icon"
-                        />
-                        {expertise.text}
-                      </p>
-                    </div>
-                  ))}
+  plan.expertise.map((expertise, eIndex) => (
+    <div key={`expertise-${index}-${eIndex}`}>
+      <p className="text-lg font-bold py-3">Tap into Expertise</p>
+      <p className="flex items-center gap-2 text-[16px] w-[80%] py-1">
+        <Image
+          src={expertise.icon}
+          height={20}
+          width={20}
+          alt="Expertise Icon"
+        />
+        {expertise.text}
+      </p>
+    </div>
+  ))}
+
               </div>
             </div>
           ))}

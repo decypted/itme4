@@ -62,46 +62,55 @@ const Office = () => {
 
   return (
     <div className='w-[100%] bg-gradient-to-r from-[#f5f6fa] to-[#e0e7ff] text-black overflow-hidden'>
-      <div className='w-[90%] mx-auto grid md:grid-cols-1 gap-8'>
+      <div className='w-[90%] mx-auto grid md:grid-cols-1'>
         <div className='relative space-y-2 col-span-1'>
           <div className='relative z-10'>
-            <h1 className='py-10 text-3xl'>
+            <h1 className='py-20 text-3xl'>
               InternMe is designed for prospect job seekers, employers, and students.
             </h1>
           </div>
-          <div className='flex md:flex md:space-x-10 gap-5'>
-            {products.map((product) => (
-              <motion.button
-                key={product.id}
-                onClick={() => setSelectedProduct(product)}
-                initial={{ backgroundColor: 'transparent' }}
-                animate={{
-                  backgroundColor: selectedProduct.id === product.id ? '#ebf5ff' : 'transparent',
-                  color: selectedProduct.id === product.id ? '#6eb5fc' : 'black',
-                  scaleX: selectedProduct.id === product.id ? 1.05 : 1
-                }}
-                whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}
-                transition={{ duration: 0.3 }}
-                className={`h-[4em] rounded-full flex items-center justify-between space-x-2 w-full md:w-[33%] text-black shadow-md px-4 relative z-10 
-                 `}
-              >
-                <div className='flex items-center space-x-2'>
-                  <div>
-                    <Image
-                      src={product.image}
-                      width={30}
-                      height={30}
-                      objectFit="contain"
-                      alt={product.name}
-                      className='logo'
-                    />
-                  </div>
-                  <span>{product.name}</span>
-                </div>
-               
-              </motion.button>
-            ))}
+          <div 
+  className="flex md:grid grid-cols-3 md:space-x-10 gap-5 overflow-x-auto w-[100%] absolute md:relative 
+  scroll-smooth scrollbar-hide whitespace-nowrap flex-nowrap snap-x snap-mandatory px-2"
+  style={{ touchAction: "pan-x", WebkitOverflowScrolling: "touch" }} // Enables touch scrolling
+  onWheel={(e) => {
+    e.preventDefault();
+    e.currentTarget.scrollLeft += e.deltaY; // Enables mouse-wheel scrolling
+  }}
+>
+  {products.map((product) => (
+    <div key={product.id} className="snap-center">
+      <motion.button
+        onClick={() => setSelectedProduct(product)}
+        initial={{ backgroundColor: "transparent" }}
+        animate={{
+          backgroundColor: selectedProduct.id === product.id ? "#ebf5ff" : "transparent",
+          color: selectedProduct.id === product.id ? "#6eb5fc" : "black",
+          scaleX: selectedProduct.id === product.id ? 1.05 : 1,
+        }}
+        whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+        transition={{ duration: 0.3 }}
+        className="h-[4em] rounded-full flex items-center justify-between space-x-2 w-full md:w-[100%] text-black shadow-md px-4 relative z-10"
+      >
+        <div className="flex items-center space-x-2">
+          <div>
+            <Image
+              src={product.image}
+              width={30}
+              height={30}
+              objectFit="contain"
+              alt={product.name}
+              className="logo"
+            />
           </div>
+          <span>{product.name}</span>
+        </div>
+      </motion.button>
+    </div>
+  ))}
+</div>
+
+
         </div>
 
         <motion.div
